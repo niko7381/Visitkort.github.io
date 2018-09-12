@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hjemmeside</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+	<!-- Laver side-slide menu når skærmen bliver lille nok -->
+	<nav class="navbar">
+		<span class="open-slide">
+			<a href="#" onclick="openSlideMenu()">
+				<!-- Logo til side menu --> 
+				<svg widt="30" height="30">
+					<path d="M0,5 30,5" stroke="#fff"
+					stroke-width="5"/>
+					<path d="M0,14 30,14" stroke="#fff"
+					stroke-width="5"/>
+					<path d="M0,23 30,23" stroke="#fff"
+					stroke-width="5"/>
+			</a>
+		
+		<!-- indhold i side-menu-->
+		</span>
+			<ul class="navbar-nav">
+				<li><a href="index.html">Forside</a></li>
+				<li><a href="Portfolie.html">Portfolie</a></li>
+				<li><a href="CV.html">CV</a></li>
+				<li><a href="Kontakt.html">Kontakt</a></li>
+				<!--<li><a href="hamburgermenu.html">Hamburgermenu</a></li>-->
+			</ul>
+	</nav>
+
+	<!-- navigations menu header-->
+	<div id="side-menu" class="side-nav">
+		<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+		<a href="index.html">Forside</a>
+		<a href="Portfolie.html">Portfolie</a>
+		<a href="CV.html">CV</a>
+		<a href="Kontakt.html">Kontakt</a>
+	</div>
+
+	<h1 style="padding-left: 120px;">Hvis du vil i kontakt med mig så tryk på knappen!! :) </h1>
+
+<div class="modal-container">
+ 
+  <!-- Trigger modal vinduet med en knap -->
+  <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal" id="openIt">Klik her for kontakt informationer</button>
+
+  <!-- Modal vindue -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal indhold-->
+      <div class="modal-content">
+        
+        <div class="modal-header" style="background-color: #3b5998;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Kontakt informationer</h4>
+        </div>
+        
+        <div class="modal-body">
+             <table>
+              <tr style="border: 1px solid black;">
+                <th style="border: 1px solid black;" id="mobil">Mobil:</th>
+                <td style="border: 1px solid black;" id="mobil">28302809</td>
+              </tr>
+              <tr style="border: 1px solid black;">
+                <th style="border: 1px solid black;" id="mobil">Email:</th>
+                <td style="border: 1px solid black;" id="mobil">niko.ringgaard@gmail.com</td>
+              </tr>
+              <tr style="border: 1px solid black;">
+                <th style="border: 1px solid black;" id="mobil">Adresse:</th>
+                <td style="border: 1px solid black;" id="mobil">Ellemarksvej 64 Aarhus C</td>
+              </tr>
+            </table>
+        </div>
+       
+        <div class="modal-footer" style="background-color: #3b5998;">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+</div>
+
+<script type="text/javascript">
+	function openSlideMenu() {
+		document.getElementById('side-menu').style.width = '250px';
+		document.getElementById('main-Kontakt').style.marginLeft = '250px';
+		document.getElementById('tabel-kontakt').style.marginLeft = '250px';
+	}
+
+
+	function closeSlideMenu() {
+		document.getElementById('side-menu').style.width = '0';
+		document.getElementById('main-Kontakt').style.marginLeft = '0';
+		document.getElementById('tabel-kontakt').style.marginLeft = '0';
+	}
+</script>
+</body>
+</html>

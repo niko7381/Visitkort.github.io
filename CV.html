@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hjemmeside</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<nav class="navbar">
+		<span class="open-slide">
+			<a href="#" onclick="openSlideMenu()">
+				<svg widt="30" height="30">
+					<path d="M0,5 30,5" stroke="#fff"
+					stroke-width="5"/>
+					<path d="M0,14 30,14" stroke="#fff"
+					stroke-width="5"/>
+					<path d="M0,23 30,23" stroke="#fff"
+					stroke-width="5"/>
+			</a>
+		</span>
+			<ul class="navbar-nav">
+				<li><a href="index.html">Forside</a></li>
+				<li><a href="Portfolie.html">Portfolie</a></li>
+				<li><a href="CV.html">CV</a></li>
+				<li><a href="Kontakt.html">Kontakt</a></li>
+				<!--<li><a href="hamburgermenu.html">Hamburgermenu</a></li>-->
+			</ul>
+	</nav>
+
+	<div id="side-menu" class="side-nav">
+		<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+		<a href="index.html">Forside</a>
+		<a href="Portfolie.html">Portfolie</a>
+		<a href="CV.html">CV</a>
+		<a href="Kontakt.html">Kontakt</a>
+		<!--<a href="hamburgermenu.html">Hamburgermenu</a>-->
+	</div>
+
+	<div id="main-CV">
+		<h1>CV</h1>
+	</div>
+	
+	<div class="table-cv" style="overflow-x: auto;">
+	<table id="table-cv">
+		<tr>
+			<th id="cv">Dato</th>
+			<th id="cv">Uddannelse</th>
+		</tr>
+		<tr>
+			<td id="cv">22-06/19</td>
+			<td id="cv">SKP på Aarhus Tech</td>
+		</tr>
+		<tr>
+			<td id="cv">15-1/18 til 21/6-18</td>
+			<td id="cv">HF1 Datatekniker med speciale i programmering EUX på Aarhus Tech</td>
+		</tr>
+		<tr>
+			<td id="cv">31-7/17 til 12-1/18</td>
+			<td id="cv">SKP på Aarhus Tech</td>
+		</tr>
+		<tr>
+			<td id="cv">1-9/17 til 13-9/17</td>
+			<td id="cv">Skoleforløb i Scotland</td>
+		</tr>
+		<tr>
+			<td id="cv">16-1/17 til 23-6/17</td>
+			<td id="cv">GF2 Datateknikker EUX på Aarhus Tech</td>
+		</tr>
+		<tr>
+			<td id="cv">4-8/16 til 13-1/17</td>
+			<td id="cv">IT, Web og Media GF1 Tech College Aalborg</td>
+		</tr>
+		<tr>
+			<td id="cv">2006 til 2016</td>
+			<td id="cv">0-9 klasse gennemført i Nordjylland</td>
+		</tr>
+		<tr>
+			<th></th>
+			<th id="cv">Kursuser</th>
+		</tr>
+		<tr>
+			<td id="cv">25-2/18</td>
+			<td id="cv">Grundtræner modul A ved Bueskydning Danmark</td>
+		</tr>
+		<tr>
+			<td id="cv">24-2/18</td>
+			<td id="cv">1-2 træner ved Bueskydning Danmark</td>
+		</tr>
+	</table>
+</div>
+
+<script type="text/javascript">
+	function openSlideMenu() {
+		document.getElementById('side-menu').style.width = '250px';
+		document.getElementById('main-CV').style.marginLeft = '250px';
+		document.getElementById('table-cv').style.marginLeft = '250px';
+	}
+
+
+	function closeSlideMenu() {
+		document.getElementById('side-menu').style.width = '0';
+		document.getElementById('main-CV').style.marginLeft = '0';
+		document.getElementById('table-cv').style.marginLeft = '0';
+	}
+</script>
+</body>
+</html>
